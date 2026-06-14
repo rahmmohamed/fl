@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL = 'http://localhost:5000/api/dashboard';
+const API_URL = 'https://fl-4akv.onrender.com/api/dashboard';
 
 export const fetchDashboard = createAsyncThunk('dashboard/fetchAll', async () => {
   const [summaryRes, revenueRes, customersRes, productsRes] = await Promise.all([
