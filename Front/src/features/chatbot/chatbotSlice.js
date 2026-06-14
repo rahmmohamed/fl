@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL = 'http://localhost:5000/api/ai';
+const API_URL = 'https://fl-4akv.onrender.com';
 
 export const askAdvisor = createAsyncThunk('chatbot/ask', async (message) => {
   const res = await fetch(`${API_URL}/advice`, {
