@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL = 'https://fl-4akv.onrender.com';
+const API_URL = 'https://fl-4akv.onrender.com/api/customers';
 
 export const fetchCustomers = createAsyncThunk('customers/fetch', async () => {
   const res = await fetch(API_URL);
